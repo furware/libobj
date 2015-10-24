@@ -143,7 +143,7 @@ default {
             if (!objGetChild(listenObj)) {
                 llWhisper(0, "No sessions left, removing listen.");
                 integer listenHandle = (integer)objGetProp(listenObj, "handle");
-                llListenRemove((integer)listenHandle);
+                llListenRemove(listenHandle);
                 objDelete(listenObj);
             }
         }
