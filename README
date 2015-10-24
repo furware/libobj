@@ -1,0 +1,5 @@
+LibObj is a collection of functions that are designed to simplify data management of multiple, (pseudo-)parallel threads in LSL scripts. Examples include the communication with multiple avatars (e.g. through dialogs) or objects (e.g. through listens or HTTP) where the states of the communication threads are usually independent from one another.
+
+To this end, the library implements a rudimentary concept of object-oriented data management. The concept should be relatively easy to grasp and use for programmers and offers versatile means to data management which is not resticted to its originally intended use case.
+
+Please see http://http://wiki.secondlife.com/wiki/LibObj for more information.
