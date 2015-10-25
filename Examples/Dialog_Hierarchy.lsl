@@ -74,6 +74,7 @@ default {
                 
                 // Create and initialize listen object.
                 listenObj = objNew();
+                objSetName(listenObj, "listen");
                 integer listenHandle = llListen(-234, "", NULL_KEY, "");
                 objSetProp(listenObj, "handle", (string)listenHandle);
             }
