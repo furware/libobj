@@ -102,9 +102,11 @@ string objGetPathItem(integer id, integer item) {
 }
 
 integer objByPath(list path) {
-    path = llParseStringKeepNulls(llDumpList2String(path, "\n"), ["\n"], []);
-    integer idx = llListFindList(_objectPaths, [0.0] + path);
-    if (~idx) return llList2Integer(_objectPaths, idx-2);
+    if(path != []) {
+        path = llParseStringKeepNulls(llDumpList2String(path, "\n"), ["\n"], []);
+        integer idx = llListFindList(_objectPaths, [0.0] + path);
+        if (~idx) return llList2Integer(_objectPaths, idx-2);
+    }
     return 0;
 }
 
